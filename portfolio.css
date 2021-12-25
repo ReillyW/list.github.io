@@ -1,0 +1,48 @@
+footer{
+    font-size: 0.9em; margin: 3em 0;
+}
+
+div#nav img{
+    width: 30px;
+    padding: 15px;
+    margin: 0 4px;
+    border-radius: 4px;
+    text-align: center;
+    float: none;
+    background-color:tan;
+}
+
+div#nav a {
+    text-decoration: none;
+}
+
+div#case {
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    margin: 1em auto;
+    line-height: 1.4em;
+}
+
+div#case p b {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+figure img {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
