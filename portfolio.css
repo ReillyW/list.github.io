@@ -2,31 +2,17 @@ footer{
     font-size: 0.9em; margin: 3em 0;
 }
 
-div#nav img{
-    width: 30px;
-    padding: 15px;
-    margin: 0 4px;
-    border-radius: 4px;
-    text-align: center;
-    float: none;
-    background-color:tan;
-}
-
-div#nav a {
-    text-decoration: none;
-}
-
-div#case {
+/* div#case {
     width: 90%;
     max-width: 600px;
     text-align: left;
     margin: 1em auto;
     line-height: 1.4em;
-}
+} */
 
-div#case p b {
+/* div#case p b {
     display: block;
-}
+} */
 
 body {
     text-align: center;
@@ -41,8 +27,82 @@ a {
     color: black;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+figure {
+    margin: 1em auto;
+}
+
+figure#shifts {
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+div#shifts {
+    width: 1000px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+div#frontopening {
+    text-align: left;
+    margin: 1em auto;
+    width: 40%;
+    display: block;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+}
+
+label {
+    display: block;
+}
+
+button {
+text-align: center;
+display: block;
+margin: 1em auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+    padding: 0px;
+}
+
+th#items {
+    text-align: left;
+}
+
+th#total {
+    text-align: left;
+}
+
+input#begttl, input#slcttl, input#ttlttl, input#usettl, input#grndttl {
+    width: 17.5%;
+}
+
+div#slicecontent {
+    margin: 1em auto;
+    width: 300px;
+}
+
+table#slicechart {
+    margin: 1em auto;
+}
+
+select, option{
+    text-align: left;
+}
+
+p#begttl, p#slcttl, p#ttlttl, p#usettl {
+    text-align: center;
+}
+
+p#grndttl {
+    text-align: right;
 }

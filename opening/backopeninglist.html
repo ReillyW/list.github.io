@@ -22,29 +22,1665 @@
 </head>
 
 <body>
-    <h1>Back Opening List</h1>
+    <h1>Opening Prep List</h1>
     
-
-    <div id='content'>
-        <p>
-        <input type='checkbox'>
-        <span id='listcontent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris purus, volutpat quis lectus in, tristique porta tortor.</span>
-        </p>
-        <p>
-            <input type='checkbox'>
-            <span id='listcontent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris purus, volutpat quis lectus in, tristique porta tortor.</span>
-        </p>
-        <p>
-            <input type='checkbox'>
-            <span id='listcontent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris purus, volutpat quis lectus in, tristique porta tortor.</span>
-        </p>
+    <div id='backopeningcontent'>
+    <div id='slicecontent'>
+        <table id='slicechart'>
+            <tr>
+                <th id='items'>Items:</th>
+                <th>BEG</th>
+                <th>SLC</th>
+                <th>TTL</th>
+                <th>USE</th>
+            </tr>
+            <tr>
+                <td>
+                    Onion:
+                </td>
+                <td>
+                    <select id='begonions' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slconions' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlonions'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='useonions'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='onstotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Toms:
+                </td>
+                <td>
+                    <select id='begtoms' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slctoms' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttltoms'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usetoms'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='tomstotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mushroom:
+                </td>
+                <td>
+                    <select id='begmushrooms' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcmushrooms' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlmushrooms'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usemushrooms'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='mushtotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bells:
+                </td>
+                <td>
+                    <select id='begbells' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcbells' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlbells'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usebells'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='bellstotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SL Pickle:
+                </td>
+                <td>
+                    <select id='begpickle' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcpickle' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlpickle'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usepickle'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='pickletotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lemons:
+                </td>
+                <td>
+                    <select id='beglemons' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slclemons' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttllemons'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='uselemons'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='lemonstotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jack:
+                </td>
+                <td>
+                    <select id='begjack' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcjack' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttljack'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usejack'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='jacktotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chedd:
+                </td>
+                <td>
+                    <select id='begchedd' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcchedd' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlchedd'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usechedd'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='cheddtotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Swiss:
+                </td>
+                <td>
+                    <select id='begswiss' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcswiss' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlswiss'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='useswiss'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='swisstotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    P. Jack:
+                </td>
+                <td>
+                    <select id='begpjack' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcpjack' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlpjack'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usepjack'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='pjacktotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Turkey:
+                </td>
+                <td>
+                    <select id='begturkey' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcturkey' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlturkey'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='useturkey'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='turkeytotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ham:
+                </td>
+                <td>
+                    <select id='begham' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcham' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlham'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='useham'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='hamtotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pastrami:
+                </td>
+                <td>
+                    <select id='begpastrami' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcpastrami' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlpastrami'onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='usepastrami'onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='pasttotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    R.B.:
+                </td>
+                <td>
+                    <select id='begrb' onchange='begSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='slcrb' onchange='slcSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='ttlrb' onchange='ttlSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='userb' onchange='useSum();'>
+                        <option disabled hidden selected>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                    </select>
+                </td>
+                <td>
+                    <p id='rbtotal'></p>
+                </td>
+            </tr>
+            <tr>
+                <th id='total'>Total:</th>
+                <td><p id='begttl'>&nbsp;</p></td>
+                <td><p id='slcttl'>&nbsp;</p></td>
+                <td><p id='ttlttl'>&nbsp;</p></td>
+                <td><p id='usettl'>&nbsp;</p></td>
+                <td><p id='grndttl'>&nbsp;</p></td>
+            </tr>
+        </table>
     </div>
+</div>
 
     <button id='reload' onclick="location.reload();">
-        Refresh
+        Clear
     </button>
+
     <script type='text/javascript'>
-    
+        
+        function totalOns() {
+            //ons
+            var begons = parseInt(document.getElementById('begonions').value);
+            var slcons = parseInt(document.getElementById('slconions').value);
+            var ttlons = parseInt(document.getElementById('ttlonions').value);
+            var useons = parseInt(document.getElementById('useonions').value);
+
+            var precalc = (begons+slcons+ttlons);
+            var calc = (precalc-useons);
+
+            document.getElementById('onstotal').innerHTML = calc;
+            // toms
+            var begtoms = parseInt(document.getElementById('begtoms').value);
+            var slctoms = parseInt(document.getElementById('slctoms').value);
+            var ttltoms = parseInt(document.getElementById('ttltoms').value);
+            var usetoms = parseInt(document.getElementById('usetoms').value);
+
+            var precalc = (begtoms+slctoms+ttltoms);
+            var calc = (precalc-usetoms);
+
+            document.getElementById('tomstotal').innerHTML = calc;
+            //mush
+            var begmush = parseInt(document.getElementById('begmush').value);
+            var slcmush = parseInt(document.getElementById('slcmush').value);
+            var ttlmush = parseInt(document.getElementById('ttlmush').value);
+            var usemush = parseInt(document.getElementById('usemush').value);
+
+            var precalc = (begmush+slcmush+ttlmush);
+            var calc = (precalc-usemush);
+
+            document.getElementById('mushtotal').innerHTML = calc;
+            //bells
+            var begbells = parseInt(document.getElementById('begbells').value);
+            var slcbells= parseInt(document.getElementById('slcbells').value);
+            var ttlbells = parseInt(document.getElementById('ttbells').value);
+            var usebells = parseInt(document.getElementById('usebells').value);
+
+            var precalc = (begbells+slcbells+ttlbells);
+            var calc = (precalc-usebells);
+
+            document.getElementById('bellstotal').innerHTML = calc;
+            //pickle
+            var begpickle = parseInt(document.getElementById('begpickle').value);
+            var slcpickle = parseInt(document.getElementById('slcpickle').value);
+            var ttlpickle = parseInt(document.getElementById('ttlpickle').value);
+            var usepickle = parseInt(document.getElementById('usepickle').value);
+
+            var precalc = (begpickle+slcpickle+ttlpickle);
+            var calc = (precalc-usepickle);
+
+            document.getElementById('pickletotal').innerHTML = calc;
+            //lemons
+            var beglemons = parseInt(document.getElementById('beglemons').value);
+            var slclemons = parseInt(document.getElementById('slclemons').value);
+            var ttllemons = parseInt(document.getElementById('ttllemons').value);
+            var uselemons = parseInt(document.getElementById('uselemons').value);
+
+            var precalc = (beglemons+slclemons+ttllemons);
+            var calc = (precalc-uselemons);
+
+            document.getElementById('lemonstotal').innerHTML = calc;
+            //jack
+            var begjack = parseInt(document.getElementById('begjack').value);
+            var slcjack = parseInt(document.getElementById('slcjack').value);
+            var ttljack = parseInt(document.getElementById('ttljack').value);
+            var usejack = parseInt(document.getElementById('usejack').value);
+
+            var precalc = (begjack+slcjack+ttljack);
+            var calc = (precalc-usejack);
+
+            document.getElementById('jacktotal').innerHTML = calc;
+            //chedd
+            var begchedd = parseInt(document.getElementById('begchedd').value);
+            var slcchedd = parseInt(document.getElementById('slcchedd').value);
+            var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
+            var usechedd = parseInt(document.getElementById('usechedd').value);
+
+            var precalc = (begchedd+slcchedd+ttlchedd);
+            var calc = (precalc-usechedd);
+
+            document.getElementById('cheddtotal').innerHTML = calc;
+            //swiss
+            var begswiss = parseInt(document.getElementById('begswiss').value);
+            var slcswiss = parseInt(document.getElementById('slcswiss').value);
+            var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
+            var useswiss = parseInt(document.getElementById('useswiss').value);
+
+            var precalc = (begswiss+slcswiss+ttlswiss);
+            var calc = (precalc-useswiss);
+
+            document.getElementById('swisstotal').innerHTML = calc;
+            //pjack
+            var begpjack = parseInt(document.getElementById('begpjack').value);
+            var slcpjack = parseInt(document.getElementById('slcpjack').value);
+            var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
+            var usepjack = parseInt(document.getElementById('usepjack').value);
+
+            var precalc = (begpjack+slcpjack+ttlpjack);
+            var calc = (precalc-usepjack);
+
+            document.getElementById('pjacktotal').innerHTML = calc;
+            //turkey
+            var begturkey = parseInt(document.getElementById('begturkey').value);
+            var slcturkey = parseInt(document.getElementById('slcturkey').value);
+            var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
+            var useturkey = parseInt(document.getElementById('useturkey').value);
+
+            var precalc = (begturkey+slcturkey+ttlturkey);
+            var calc = (precalc-useturkey);
+
+            document.getElementById('turkeytotal').innerHTML = calc;
+            //ham
+            var begham = parseInt(document.getElementById('begham').value);
+            var slcham = parseInt(document.getElementById('slcham').value);
+            var ttlham = parseInt(document.getElementById('ttlham').value);
+            var useham = parseInt(document.getElementById('useham').value);
+
+            var precalc = (begham+slcham+ttlham);
+            var calc = (precalc-useham);
+
+            document.getElementById('hamtotal').innerHTML = calc;
+            //pastrami
+            var begpastrami = parseInt(document.getElementById('begpastrami').value);
+            var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
+            var ttlpastrami = parseInt(document.getElementById('ttlpastrami').value);
+            var usepastrami = parseInt(document.getElementById('usepastrami').value);
+
+            var precalc = (begpastrami+slcpastrami+ttlpastrami);
+            var calc = (precalc-usepastrami);
+
+            document.getElementById('pasttotal').innerHTML = calc;
+            //rb
+            var begrb = parseInt(document.getElementById('begrb').value);
+            var slcrb = parseInt(document.getElementById('slcrb').value);
+            var ttlrb = parseInt(document.getElementById('ttlrb').value);
+            var userb = parseInt(document.getElementById('userb').value);
+
+            var precalc = (begrb+slcrb+ttlrb);
+            var calc = (precalc-userb);
+
+            document.getElementById('rbtotal').innerHTML = calc;
+        }
+
+        function begSum() {
+            var begons = parseInt(document.getElementById('begonions').value);
+            var begtoms = parseInt(document.getElementById('begtoms').value);
+            var begmush = parseInt(document.getElementById('begmushrooms').value);
+            var begbells = parseInt(document.getElementById('begbells').value);
+            var begpick = parseInt(document.getElementById('begpickle').value);
+            var beglemons = parseInt(document.getElementById('beglemons').value);
+            var begjack = parseInt(document.getElementById('begjack').value);
+            var begchedd = parseInt(document.getElementById('begchedd').value);
+            var begswiss = parseInt(document.getElementById('begswiss').value);
+            var begpjack = parseInt(document.getElementById('begpjack').value);
+            var begturkey = parseInt(document.getElementById('begturkey').value);
+            var begham = parseInt(document.getElementById('begham').value);
+            var begpastrami = parseInt(document.getElementById('begpastrami').value);
+            var begrb = parseInt(document.getElementById('begrb').value);
+
+            var calculation = (begons+begtoms+begmush+begbells+begpick+beglemons+begjack+begchedd+begswiss+begpjack+begturkey+begham+begpastrami+begrb);
+
+            document.getElementById('begttl').innerHTML = calculation;
+
+//ons
+var begons = parseInt(document.getElementById('begonions').value);
+            var slcons = parseInt(document.getElementById('slconions').value);
+            var ttlons = parseInt(document.getElementById('ttlonions').value);
+            var useons = parseInt(document.getElementById('useonions').value);
+
+            var precalc = (begons+slcons+ttlons);
+            var calc = (precalc-useons);
+
+            document.getElementById('onstotal').innerHTML = calc;
+            // toms
+            var begtoms = parseInt(document.getElementById('begtoms').value);
+            var slctoms = parseInt(document.getElementById('slctoms').value);
+            var ttltoms = parseInt(document.getElementById('ttltoms').value);
+            var usetoms = parseInt(document.getElementById('usetoms').value);
+
+            var precalc = (begtoms+slctoms+ttltoms);
+            var calc = (precalc-usetoms);
+
+            document.getElementById('tomstotal').innerHTML = calc;
+            //mush
+            var begmush = parseInt(document.getElementById('begmushrooms').value);
+            var slcmush = parseInt(document.getElementById('slcmushrooms').value);
+            var ttlmush = parseInt(document.getElementById('ttlmushrooms').value);
+            var usemush = parseInt(document.getElementById('usemushrooms').value);
+
+            var precalc = (begmush+slcmush+ttlmush);
+            var calc = (precalc-usemush);
+
+            document.getElementById('mushtotal').innerHTML = calc;
+            //bells
+            var begbells = parseInt(document.getElementById('begbells').value);
+            var slcbells= parseInt(document.getElementById('slcbells').value);
+            var ttlbells = parseInt(document.getElementById('ttlbells').value);
+            var usebells = parseInt(document.getElementById('usebells').value);
+
+            var precalc = (begbells+slcbells+ttlbells);
+            var calc = (precalc-usebells);
+
+            document.getElementById('bellstotal').innerHTML = calc;
+            //pickle
+            var begpickle = parseInt(document.getElementById('begpickle').value);
+            var slcpickle = parseInt(document.getElementById('slcpickle').value);
+            var ttlpickle = parseInt(document.getElementById('ttlpickle').value);
+            var usepickle = parseInt(document.getElementById('usepickle').value);
+
+            var precalc = (begpickle+slcpickle+ttlpickle);
+            var calc = (precalc-usepickle);
+
+            document.getElementById('pickletotal').innerHTML = calc;
+            //lemons
+            var beglemons = parseInt(document.getElementById('beglemons').value);
+            var slclemons = parseInt(document.getElementById('slclemons').value);
+            var ttllemons = parseInt(document.getElementById('ttllemons').value);
+            var uselemons = parseInt(document.getElementById('uselemons').value);
+
+            var precalc = (beglemons+slclemons+ttllemons);
+            var calc = (precalc-uselemons);
+
+            document.getElementById('lemonstotal').innerHTML = calc;
+            //jack
+            var begjack = parseInt(document.getElementById('begjack').value);
+            var slcjack = parseInt(document.getElementById('slcjack').value);
+            var ttljack = parseInt(document.getElementById('ttljack').value);
+            var usejack = parseInt(document.getElementById('usejack').value);
+
+            var precalc = (begjack+slcjack+ttljack);
+            var calc = (precalc-usejack);
+
+            document.getElementById('jacktotal').innerHTML = calc;
+            //chedd
+            var begchedd = parseInt(document.getElementById('begchedd').value);
+            var slcchedd = parseInt(document.getElementById('slcchedd').value);
+            var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
+            var usechedd = parseInt(document.getElementById('usechedd').value);
+
+            var precalc = (begchedd+slcchedd+ttlchedd);
+            var calc = (precalc-usechedd);
+
+            document.getElementById('cheddtotal').innerHTML = calc;
+            //swiss
+            var begswiss = parseInt(document.getElementById('begswiss').value);
+            var slcswiss = parseInt(document.getElementById('slcswiss').value);
+            var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
+            var useswiss = parseInt(document.getElementById('useswiss').value);
+
+            var precalc = (begswiss+slcswiss+ttlswiss);
+            var calc = (precalc-useswiss);
+
+            document.getElementById('swisstotal').innerHTML = calc;
+            //pjack
+            var begpjack = parseInt(document.getElementById('begpjack').value);
+            var slcpjack = parseInt(document.getElementById('slcpjack').value);
+            var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
+            var usepjack = parseInt(document.getElementById('usepjack').value);
+
+            var precalc = (begpjack+slcpjack+ttlpjack);
+            var calc = (precalc-usepjack);
+
+            document.getElementById('pjacktotal').innerHTML = calc;
+            //turkey
+            var begturkey = parseInt(document.getElementById('begturkey').value);
+            var slcturkey = parseInt(document.getElementById('slcturkey').value);
+            var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
+            var useturkey = parseInt(document.getElementById('useturkey').value);
+
+            var precalc = (begturkey+slcturkey+ttlturkey);
+            var calc = (precalc-useturkey);
+
+            document.getElementById('turkeytotal').innerHTML = calc;
+            //ham
+            var begham = parseInt(document.getElementById('begham').value);
+            var slcham = parseInt(document.getElementById('slcham').value);
+            var ttlham = parseInt(document.getElementById('ttlham').value);
+            var useham = parseInt(document.getElementById('useham').value);
+
+            var precalc = (begham+slcham+ttlham);
+            var calc = (precalc-useham);
+
+            document.getElementById('hamtotal').innerHTML = calc;
+            //pastrami
+            var begpastrami = parseInt(document.getElementById('begpastrami').value);
+            var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
+            var ttlpastrami = parseInt(document.getElementById('ttlpastrami').value);
+            var usepastrami = parseInt(document.getElementById('usepastrami').value);
+
+            var precalc = (begpastrami+slcpastrami+ttlpastrami);
+            var calc = (precalc-usepastrami);
+
+            document.getElementById('pasttotal').innerHTML = calc;
+            //rb
+            var begrb = parseInt(document.getElementById('begrb').value);
+            var slcrb = parseInt(document.getElementById('slcrb').value);
+            var ttlrb = parseInt(document.getElementById('ttlrb').value);
+            var userb = parseInt(document.getElementById('userb').value);
+
+            var precalc = (begrb+slcrb+ttlrb);
+            var calc = (precalc-userb);
+
+            document.getElementById('rbtotal').innerHTML = calc;
+
+            // Ends Here
+        }
+
+        function slcSum() {
+            var slcons = parseInt(document.getElementById('slconions').value);
+            var slctoms = parseInt(document.getElementById('slctoms').value);
+            var slcmush = parseInt(document.getElementById('slcmushrooms').value);
+            var slcbells = parseInt(document.getElementById('slcbells').value);
+            var slcpick = parseInt(document.getElementById('slcpickle').value);
+            var slclemons = parseInt(document.getElementById('slclemons').value);
+            var slcjack = parseInt(document.getElementById('slcjack').value);
+            var slcchedd = parseInt(document.getElementById('slcchedd').value);
+            var slcswiss = parseInt(document.getElementById('slcswiss').value);
+            var slcpjack = parseInt(document.getElementById('slcpjack').value);
+            var slcturkey = parseInt(document.getElementById('slcturkey').value);
+            var slcham = parseInt(document.getElementById('slcham').value);
+            var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
+            var slcrb = parseInt(document.getElementById('slcrb').value);
+
+            var calculation = (slcons+slctoms+slcmush+slcbells+slcpick+slclemons+slcjack+slcchedd+slcswiss+slcpjack+slcturkey+slcham+slcpastrami+slcrb);
+
+            document.getElementById('slcttl').innerHTML = calculation;
+
+            // Ends Here
+        }
+
+        function ttlSum() {
+            var ttlons = parseInt(document.getElementById('ttlonions').value);
+            var ttltoms = parseInt(document.getElementById('ttltoms').value);
+            var ttlmush = parseInt(document.getElementById('ttlmushrooms').value);
+            var ttlbells = parseInt(document.getElementById('ttlbells').value);
+            var ttlpick = parseInt(document.getElementById('ttlpickle').value);
+            var ttllemons = parseInt(document.getElementById('ttllemons').value);
+            var ttljack = parseInt(document.getElementById('ttljack').value);
+            var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
+            var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
+            var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
+            var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
+            var ttlham = parseInt(document.getElementById('ttlham').value);
+            var ttlpastrami = parseInt(document.getElementById('ttlpastrami').value);
+            var ttlrb = parseInt(document.getElementById('ttlrb').value);
+
+            var calculation = (ttlons+ttltoms+ttlmush+ttlbells+ttlpick+ttllemons+ttljack+ttlchedd+ttlswiss+ttlpjack+ttlturkey+ttlham+ttlpastrami+ttlrb);
+
+            document.getElementById('ttlttl').innerHTML = calculation;
+
+            // Ends Here
+        }
+
+        function useSum() {
+            var useons = parseInt(document.getElementById('useonions').value);
+            var usetoms = parseInt(document.getElementById('usetoms').value);
+            var usemush = parseInt(document.getElementById('usemushrooms').value);
+            var usebells = parseInt(document.getElementById('usebells').value);
+            var usepick = parseInt(document.getElementById('usepickle').value);
+            var uselemons = parseInt(document.getElementById('uselemons').value);
+            var usejack = parseInt(document.getElementById('usejack').value);
+            var usechedd = parseInt(document.getElementById('usechedd').value);
+            var useswiss = parseInt(document.getElementById('useswiss').value);
+            var usepjack = parseInt(document.getElementById('usepjack').value);
+            var useturkey = parseInt(document.getElementById('useturkey').value);
+            var useham = parseInt(document.getElementById('useham').value);
+            var usepastrami = parseInt(document.getElementById('usepastrami').value);
+            var userb = parseInt(document.getElementById('userb').value);
+
+            var calculation = (useons+usetoms+usemush+usebells+usepick+uselemons+usejack+usechedd+useswiss+usepjack+useturkey+useham+usepastrami+userb);
+
+            document.getElementById('usettl').innerHTML = calculation;
+
+            // Ends here
+        }
+
+        function grandTotal() {
+            var begTotal = parseInt(document.getElementById('begttl').innerHTML);
+            var slcTotal = parseInt(document.getElementById('slcttl').innerHTML);
+            var ttlTotal = parseInt(document.getElementById('ttlttl').innerHTML);
+            var useTotal = parseInt(document.getElementById('usettl').innerHTML);
+
+            if(grandCalc != NaN) {
+                document.getElementById('grndttl').innerHTML = grandCalc;
+            }
+            else {
+                document.getElementById('grndttl').innerHTML = "&nbsp;";
+            }
+
+            var preGrandCalc = (begTotal+slcTotal+ttlTotal);
+            var grandCalc = (preGrandCalc - useTotal)
+            document.getElementById('grndttl').innerHTML = grandCalc;
+        }
+
+        setInterval(grandTotal, 1);
+
+        setInterval(begSum, 1);
 
     </script>
 </body>
