@@ -117,12 +117,39 @@ p#grndttl {
         margin-left: 160px;
         width: 1240px;
     }
+
+    h2{
+        margin-left: -50px;
+    }
+
+    h1{
+        margin-left: 30px;
+    }
+    button{
+        margin-left: 630px;
+    }
+}
+
+@media screen and (max-width:1024px) and (max-height: 600px) {
+
+    h2{
+        margin-right: 80px;
+    }
+
+    h1{
+        margin-right:20px;
+    }
+
 }
 
 @media screen and (max-width:1024px) and (max-height: 1366px) {
     div#frontopening {
-        margin: 10px;
-        width: 900px;
+        margin-left: 30px;
+        width: 1000px;
+    }
+
+    h2#times{
+        margin-left: -40px;
     }
 }
 
@@ -131,19 +158,57 @@ p#grndttl {
         margin: 10px;
         width: 730px;
     }
+    div#selectshift{
+        margin-left: 120px;
+        margin-right: -120px;
+    }
+    h2#times{
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width:540px) and (max-height: 720px) {
     div#frontopening {
         margin: 10px;
-        width: 500px;
+        width: 630px;
+    }
+
+    div#selectshift{
+        margin-left: 235px;
+        margin-right: -235px;
+    }
+
+    button{
+        margin-left: 300px;
+    }
+
+    h1{
+        margin-left: 125px;
     }
 }
 
 @media screen and (max-width:414px) {
     div#frontopening {
         margin: 10px;
-        width: 375px;
+        width: 650px;
+    }
+
+    div#selectshift{
+        margin-left: 300px;
+        margin-right: -300px;
+    }
+
+    h1{
+        margin-left: 130px;
+        margin-right:-130px
+    }
+
+    h2#times{
+        margin-right:30px;
+    }
+
+    button{
+        margin-left: 300px;
     }
 }
 
@@ -152,19 +217,83 @@ p#grndttl {
         margin: 10px;
         width: 335px;
     }
+
+    div#selectshift{
+        margin-left: 365px;
+        margin-right: -365px;
+    }
+    h1{
+        margin-left:5px;
+        margin-right:-5px;
+    }
+    button{
+        margin-left:160px;
+    }
 }
 
 @media screen and (max-width:375px) {
     div#frontopening {
         margin: 10px;
-        width: 335px;
+        width: 480px;
     }
+
+    div#selectshift{
+        margin-left: 320px;
+        margin-right: -320px;
+    }
+
+    h1{
+        margin-left:60px;
+        margin-right:-60px;
+    }
+
+    h2#times{
+        margin-right:25px;
+    }
+    button{
+        margin-left: 215px;
+    }
+}
+
+@media screen and (max-width:360px) and (max-height: 740px) {
+    div#frontopening {
+        margin: 10px;
+        width: 380px;
+    }
+
+    div#selectshift{
+        margin-left: 325px;
+        margin-right: -325px;
+    }
+
+    h1{
+        margin-left: 20px;
+        margin-right:-20px;
+    }
+
+    button{
+        margin-left: 170px;
+    }
+    
 }
 
 @media screen and (max-width:360px) and (max-height: 640px) {
     div#frontopening {
         margin: 10px;
-        width: 320px;
+        width: 380px;
+    }
+
+    div#selectshift{
+        margin-left: 325px;
+        margin-right: -325px;
+    }
+    button{
+        margin-left: 170px;
+    }
+
+    h1{
+        margin-left:20px;
+        margin-right:-20px;
     }
 }
 
@@ -173,15 +302,296 @@ p#grndttl {
         margin: 10px;
         width: 280px;
     }
+
+    div#selectshift{
+        margin-left: 345px;
+        margin-right: -345px;
+    }
+    button{
+        margin-left: 125px;
+    }
+    h2#times{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+
+    h1{
+        margin-left:1px;
+        margin-right: -1px;
+    }
+}
+
+@media screen and (max-width:320px) and (max-height:658px) {
+    div#frontopening {
+        margin: 10px;
+        width: 340px;
+    }
+
+    div#selectshift{
+        margin-left: 345px;
+        margin-right: -345px;
+    }
+
+    h1{
+        margin-left:20px;
+        margin-right: -20px;
+    }
+
+    button{
+        margin-left: 150px;
+    }
 }
 
 @media screen and (max-width:280px) and (max-height: 653px) {
     div#frontopening {
-        margin-left: 30px;
-        width: 220px;
+        margin-left: 10px;
+        width: 260px;
+    }
+
+    div#selectshift{
+        margin-left: 365px;
+        margin-right: -365px;
+    }
+
+    h2#times{
+        margin-right: 25px;
+    }
+
+    h1{
+        margin-left:-3px;
+        margin-right:3px;
+        width: 275px;
+    }
+
+    button{
+        margin-left: 110px;
     }
 }
 
 p#rbttl, p#pastramittl, p#hamttl, p#turkeyttl, p#pjackttl, p#swissttl, p#cheddttl, p#jackttl, p#lemonsttl, p#picklettl, p#bellsttl, p#mushttl, p#tomsttl, p#onsttl {
     text-align: center;
+}
+
+@media screen and (orientation: landscape) and (max-width:1366px) and (max-height: 1024px) {
+    div#frontopening{
+        width: 1000px;
+        margin-left: 200px;
+    }
+
+    h2#times{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:1024px) and (max-height: 768px) {
+    div#frontopening{
+        margin-left: 70px;
+    }
+    h2#times{
+        margin-left: -13px;
+    }
+    h1{
+        margin-left:90px;
+    }
+    button{
+        margin-left:512px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:823px) and (max-height: 411px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 750px;
+    }
+
+    div#selectshift{
+        margin-left: 95px;
+        margin-right: -95px;
+    }
+
+    h2#times{
+        margin-left: 90px;
+    }
+    button{
+        margin-left: 400px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:812px) and (max-height: 375px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 740px;
+    }
+
+    div#selectshift{
+        margin-left: 100px;
+        margin-right: -100px;
+    }
+
+    h1{
+        margin-right: 60px;
+    }
+
+    button{
+        margin-left:400px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:740px) and (max-height: 360px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 665px;
+    }
+
+    div#selectshift{
+        margin-left: 135px;
+        margin-right: -135px;
+    }
+
+    h2#times {
+        margin-left: 90px;
+    }
+
+    button{
+        margin-left:360px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:736px) and (max-height: 414px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 660px;
+    }
+
+    div#selectshift{
+        margin-left: 140px;
+        margin-right: -140px;
+    }
+
+    h2#times{
+        margin-left: 85px;
+    }
+
+    button{
+        margin-left: 360px;
+    }
+    h1{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:731px) and (max-height: 411px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 660px;
+    }
+
+    div#selectshift{
+        margin-left: 137px;
+        margin-right: -137px;
+    }
+
+    h2#times {
+        margin-left: 80px;
+    }
+    button{
+        margin-left: 350px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:720px) and (max-height: 540px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 640px;
+    }
+
+    h1{
+        margin-right: 75px;
+    }
+
+    button{
+        margin-left: 330px;
+    }
+
+    h2#times{
+        margin-left:60px;
+    }
+
+    div#selectshift{
+        margin-left: 145px;
+        margin-right: -145px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:667px) and (max-height: 375px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 590px;
+    }
+
+    div#selectshift{
+        margin-left: 175px;
+        margin-right: -175px;
+    }
+    button{
+        margin-left:310px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:658px) and (max-height: 320px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 580px;
+    }
+
+    div#selectshift{
+        margin-left: 175px;
+        margin-right: -175px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:653px) and (max-height: 280px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 570px;
+    }
+
+    div#selectshift{
+        margin-left: 177px;
+        margin-right: -177px;
+    }
+
+    button{
+        margin-left:300px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:640px) and (max-height: 360px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 565px;
+    }
+
+    div#selectshift{
+        margin-left: 180px;
+        margin-right: -180px;
+    }
+    button{
+        margin-left:295px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:568px) and (max-height: 320px) {
+    div#frontopening {
+        margin-left: 30px;
+        width: 500px;
+    }
+
+    div#selectshift{
+        margin-left: 220px;
+        margin-right: -220px;
+    }
+    button{
+        margin-left:265px
+    }
 }
