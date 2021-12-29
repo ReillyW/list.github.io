@@ -364,7 +364,7 @@
                         <option value='14'>14</option>
                         <option value='15'>15</option>
                     </select> -->
-                    <p id='ttlbells'></p>
+                    <p id='bellsttl'></p>
                 </td>
                 <td>
                     <select id='usebells'onchange='useSum();'>
@@ -1298,148 +1298,154 @@
 
     <script type='text/javascript'>
         
-        function totalOns() {
-            //ons
-            var begons = parseInt(document.getElementById('begonions').value);
-            var slcons = parseInt(document.getElementById('slconions').value);
-            var ttlons = parseInt(document.getElementById('ttlonions').value);
-            var useons = parseInt(document.getElementById('useonions').value);
+        // function totalOns() {
+        //     //ons
+        //     var begons = parseInt(document.getElementById('begonions').value);
+        //     var slcons = parseInt(document.getElementById('slconions').value);
+        //     var useons = parseInt(document.getElementById('useonions').value);
 
-            var precalc = (begons+slcons+ttlons);
-            var calc = (precalc-useons);
+        //     var ttl = (begons+slcons);
 
-            document.getElementById('onstotal').innerHTML = calc;
-            // toms
-            var begtoms = parseInt(document.getElementById('begtoms').value);
-            var slctoms = parseInt(document.getElementById('slctoms').value);
-            var ttltoms = parseInt(document.getElementById('ttltoms').value);
-            var usetoms = parseInt(document.getElementById('usetoms').value);
+        //     document.getElementById('onsttl').innerHTML = ttl;
 
-            var precalc = (begtoms+slctoms+ttltoms);
-            var calc = (precalc-usetoms);
+        //     var grndonsttl = (ttl-useons);
 
-            document.getElementById('tomstotal').innerHTML = calc;
-            //mush
-            var begmush = parseInt(document.getElementById('begmush').value);
-            var slcmush = parseInt(document.getElementById('slcmush').value);
-            var ttlmush = parseInt(document.getElementById('ttlmush').value);
-            var usemush = parseInt(document.getElementById('usemush').value);
+        //     document.getElementById('onstotal').innerHTML = grndonsttl;
+        //     // toms
+        //     var begtoms= parseInt(document.getElementById('begtoms').value);
+        //     var slctoms = parseInt(document.getElementById('slctoms').value);
+        //     var usetoms = parseInt(document.getElementById('usetoms').value);
 
-            var precalc = (begmush+slcmush+ttlmush);
-            var calc = (precalc-usemush);
+        //     var ttl = (begtoms+slctoms);
 
-            document.getElementById('mushtotal').innerHTML = calc;
-            //bells
-            var begbells = parseInt(document.getElementById('begbells').value);
-            var slcbells= parseInt(document.getElementById('slcbells').value);
-            var ttlbells = parseInt(document.getElementById('ttbells').value);
-            var usebells = parseInt(document.getElementById('usebells').value);
+        //     document.getElementById('tomsttl').innerHTML = ttl;
 
-            var precalc = (begbells+slcbells+ttlbells);
-            var calc = (precalc-usebells);
+        //     var grndtomsttl = (ttl-usetoms);
 
-            document.getElementById('bellstotal').innerHTML = calc;
-            //pickle
-            var begpickle = parseInt(document.getElementById('begpickle').value);
-            var slcpickle = parseInt(document.getElementById('slcpickle').value);
-            var ttlpickle = parseInt(document.getElementById('ttlpickle').value);
-            var usepickle = parseInt(document.getElementById('usepickle').value);
+        //     document.getElementById('tomstotal').innerHTML = grndtomsttl;
+        //     //mush
+        //     var begmushrooms = parseInt(document.getElementById('begmushrooms').value);
+        //     var slcmushrooms = parseInt(document.getElementById('slcmushrooms').value);
+        //     var usemushrooms = parseInt(document.getElementById('usemushrooms').value);
 
-            var precalc = (begpickle+slcpickle+ttlpickle);
-            var calc = (precalc-usepickle);
+        //     var ttl = (begmushrooms+slcmushrooms);
 
-            document.getElementById('pickletotal').innerHTML = calc;
-            //lemons
-            var beglemons = parseInt(document.getElementById('beglemons').value);
-            var slclemons = parseInt(document.getElementById('slclemons').value);
-            var ttllemons = parseInt(document.getElementById('ttllemons').value);
-            var uselemons = parseInt(document.getElementById('uselemons').value);
+        //     document.getElementById('mushttl').innerHTML = ttl;
 
-            var precalc = (beglemons+slclemons+ttllemons);
-            var calc = (precalc-uselemons);
+        //     var grndmushroomsttl = (ttl-usemushrooms);
 
-            document.getElementById('lemonstotal').innerHTML = calc;
-            //jack
-            var begjack = parseInt(document.getElementById('begjack').value);
-            var slcjack = parseInt(document.getElementById('slcjack').value);
-            var ttljack = parseInt(document.getElementById('ttljack').value);
-            var usejack = parseInt(document.getElementById('usejack').value);
+        //     document.getElementById('mushtotal').innerHTML = grndmushroomsttl;
+        //     //bells
+        //     var begbells = parseInt(document.getElementById('begbells').value);
+        //     var slcbells= parseInt(document.getElementById('slcbells').value);
+        //     var ttlbells = parseInt(document.getElementById('ttbells').value);
+        //     var usebells = parseInt(document.getElementById('usebells').value);
 
-            var precalc = (begjack+slcjack+ttljack);
-            var calc = (precalc-usejack);
+        //     var precalc = (begbells+slcbells+ttlbells);
+        //     var calc = (precalc-usebells);
 
-            document.getElementById('jacktotal').innerHTML = calc;
-            //chedd
-            var begchedd = parseInt(document.getElementById('begchedd').value);
-            var slcchedd = parseInt(document.getElementById('slcchedd').value);
-            var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
-            var usechedd = parseInt(document.getElementById('usechedd').value);
+        //     document.getElementById('bellstotal').innerHTML = calc;
+        //     //pickle
+        //     var begpickle = parseInt(document.getElementById('begpickle').value);
+        //     var slcpickle = parseInt(document.getElementById('slcpickle').value);
+        //     var ttlpickle = parseInt(document.getElementById('ttlpickle').value);
+        //     var usepickle = parseInt(document.getElementById('usepickle').value);
 
-            var precalc = (begchedd+slcchedd+ttlchedd);
-            var calc = (precalc-usechedd);
+        //     var precalc = (begpickle+slcpickle+ttlpickle);
+        //     var calc = (precalc-usepickle);
 
-            document.getElementById('cheddtotal').innerHTML = calc;
-            //swiss
-            var begswiss = parseInt(document.getElementById('begswiss').value);
-            var slcswiss = parseInt(document.getElementById('slcswiss').value);
-            var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
-            var useswiss = parseInt(document.getElementById('useswiss').value);
+        //     document.getElementById('pickletotal').innerHTML = calc;
+        //     //lemons
+        //     var beglemons = parseInt(document.getElementById('beglemons').value);
+        //     var slclemons = parseInt(document.getElementById('slclemons').value);
+        //     var ttllemons = parseInt(document.getElementById('ttllemons').value);
+        //     var uselemons = parseInt(document.getElementById('uselemons').value);
 
-            var precalc = (begswiss+slcswiss+ttlswiss);
-            var calc = (precalc-useswiss);
+        //     var precalc = (beglemons+slclemons+ttllemons);
+        //     var calc = (precalc-uselemons);
 
-            document.getElementById('swisstotal').innerHTML = calc;
-            //pjack
-            var begpjack = parseInt(document.getElementById('begpjack').value);
-            var slcpjack = parseInt(document.getElementById('slcpjack').value);
-            var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
-            var usepjack = parseInt(document.getElementById('usepjack').value);
+        //     document.getElementById('lemonstotal').innerHTML = calc;
+        //     //jack
+        //     var begjack = parseInt(document.getElementById('begjack').value);
+        //     var slcjack = parseInt(document.getElementById('slcjack').value);
+        //     var ttljack = parseInt(document.getElementById('ttljack').value);
+        //     var usejack = parseInt(document.getElementById('usejack').value);
 
-            var precalc = (begpjack+slcpjack+ttlpjack);
-            var calc = (precalc-usepjack);
+        //     var precalc = (begjack+slcjack+ttljack);
+        //     var calc = (precalc-usejack);
 
-            document.getElementById('pjacktotal').innerHTML = calc;
-            //turkey
-            var begturkey = parseInt(document.getElementById('begturkey').value);
-            var slcturkey = parseInt(document.getElementById('slcturkey').value);
-            var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
-            var useturkey = parseInt(document.getElementById('useturkey').value);
+        //     document.getElementById('jacktotal').innerHTML = calc;
+        //     //chedd
+        //     var begchedd = parseInt(document.getElementById('begchedd').value);
+        //     var slcchedd = parseInt(document.getElementById('slcchedd').value);
+        //     var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
+        //     var usechedd = parseInt(document.getElementById('usechedd').value);
 
-            var precalc = (begturkey+slcturkey+ttlturkey);
-            var calc = (precalc-useturkey);
+        //     var precalc = (begchedd+slcchedd+ttlchedd);
+        //     var calc = (precalc-usechedd);
 
-            document.getElementById('turkeytotal').innerHTML = calc;
-            //ham
-            var begham = parseInt(document.getElementById('begham').value);
-            var slcham = parseInt(document.getElementById('slcham').value);
-            var ttlham = parseInt(document.getElementById('ttlham').value);
-            var useham = parseInt(document.getElementById('useham').value);
+        //     document.getElementById('cheddtotal').innerHTML = calc;
+        //     //swiss
+        //     var begswiss = parseInt(document.getElementById('begswiss').value);
+        //     var slcswiss = parseInt(document.getElementById('slcswiss').value);
+        //     var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
+        //     var useswiss = parseInt(document.getElementById('useswiss').value);
 
-            var precalc = (begham+slcham+ttlham);
-            var calc = (precalc-useham);
+        //     var precalc = (begswiss+slcswiss+ttlswiss);
+        //     var calc = (precalc-useswiss);
 
-            document.getElementById('hamtotal').innerHTML = calc;
-            //pastrami
-            var begpastrami = parseInt(document.getElementById('begpastrami').value);
-            var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
-            var ttlpastrami = parseInt(document.getElementById('ttlpastrami').value);
-            var usepastrami = parseInt(document.getElementById('usepastrami').value);
+        //     document.getElementById('swisstotal').innerHTML = calc;
+        //     //pjack
+        //     var begpjack = parseInt(document.getElementById('begpjack').value);
+        //     var slcpjack = parseInt(document.getElementById('slcpjack').value);
+        //     var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
+        //     var usepjack = parseInt(document.getElementById('usepjack').value);
 
-            var precalc = (begpastrami+slcpastrami+ttlpastrami);
-            var calc = (precalc-usepastrami);
+        //     var precalc = (begpjack+slcpjack+ttlpjack);
+        //     var calc = (precalc-usepjack);
 
-            document.getElementById('pasttotal').innerHTML = calc;
-            //rb
-            var begrb = parseInt(document.getElementById('begrb').value);
-            var slcrb = parseInt(document.getElementById('slcrb').value);
-            var ttlrb = parseInt(document.getElementById('ttlrb').value);
-            var userb = parseInt(document.getElementById('userb').value);
+        //     document.getElementById('pjacktotal').innerHTML = calc;
+        //     //turkey
+        //     var begturkey = parseInt(document.getElementById('begturkey').value);
+        //     var slcturkey = parseInt(document.getElementById('slcturkey').value);
+        //     var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
+        //     var useturkey = parseInt(document.getElementById('useturkey').value);
 
-            var precalc = (begrb+slcrb+ttlrb);
-            var calc = (precalc-userb);
+        //     var precalc = (begturkey+slcturkey+ttlturkey);
+        //     var calc = (precalc-useturkey);
 
-            document.getElementById('rbtotal').innerHTML = calc;
-        }
+        //     document.getElementById('turkeytotal').innerHTML = calc;
+        //     //ham
+        //     var begham = parseInt(document.getElementById('begham').value);
+        //     var slcham = parseInt(document.getElementById('slcham').value);
+        //     var ttlham = parseInt(document.getElementById('ttlham').value);
+        //     var useham = parseInt(document.getElementById('useham').value);
+
+        //     var precalc = (begham+slcham+ttlham);
+        //     var calc = (precalc-useham);
+
+        //     document.getElementById('hamtotal').innerHTML = calc;
+        //     //pastrami
+        //     var begpastrami = parseInt(document.getElementById('begpastrami').value);
+        //     var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
+        //     var ttlpastrami = parseInt(document.getElementById('ttlpastrami').value);
+        //     var usepastrami = parseInt(document.getElementById('usepastrami').value);
+
+        //     var precalc = (begpastrami+slcpastrami+ttlpastrami);
+        //     var calc = (precalc-usepastrami);
+
+        //     document.getElementById('pasttotal').innerHTML = calc;
+        //     //rb
+        //     var begrb = parseInt(document.getElementById('begrb').value);
+        //     var slcrb = parseInt(document.getElementById('slcrb').value);
+        //     var ttlrb = parseInt(document.getElementById('ttlrb').value);
+        //     var userb = parseInt(document.getElementById('userb').value);
+
+        //     var precalc = (begrb+slcrb+ttlrb);
+        //     var calc = (precalc-userb);
+
+        //     document.getElementById('rbtotal').innerHTML = calc;
+        // }
 
         function begSum() {
             var begons = parseInt(document.getElementById('begonions').value);
@@ -1464,123 +1470,147 @@
             //ons
             var begons = parseInt(document.getElementById('begonions').value);
             var slcons = parseInt(document.getElementById('slconions').value);
-            // var ttlons = parseInt(document.getElementById('ttlonions').value);
             var useons = parseInt(document.getElementById('useonions').value);
 
-            var precalc = (begons+slcons);
-            var calc = (precalc-useons);
+            var ttl = (begons+slcons);
 
-            document.getElementById('onstotal').innerHTML = calc;
+            document.getElementById('onsttl').innerHTML = ttl;
+
+            var grndonsttl = (ttl-useons);
+
+            document.getElementById('onstotal').innerHTML = grndonsttl;
             // toms
             var begtoms = parseInt(document.getElementById('begtoms').value);
             var slctoms = parseInt(document.getElementById('slctoms').value);
-            // var ttltoms = parseInt(document.getElementById('ttltoms').value);
             var usetoms = parseInt(document.getElementById('usetoms').value);
 
-            var precalc = (begtoms+slctoms);
-            var calc = (precalc-usetoms);
+            var ttl = (begtoms+slctoms);
 
-            document.getElementById('tomstotal').innerHTML = calc;
+            document.getElementById('tomsttl').innerHTML = ttl;
+
+            var grndtomsttl = (ttl-usetoms);
+
+            document.getElementById('tomstotal').innerHTML = grndtomsttl;
             //mush
-            var begmush = parseInt(document.getElementById('begmushrooms').value);
-            var slcmush = parseInt(document.getElementById('slcmushrooms').value);
-            // var ttlmush = parseInt(document.getElementById('ttlmushrooms').value);
-            var usemush = parseInt(document.getElementById('usemushrooms').value);
+            var begmushrooms = parseInt(document.getElementById('begmushrooms').value);
+            var slcmushrooms = parseInt(document.getElementById('slcmushrooms').value);
+            var usemushrooms = parseInt(document.getElementById('usemushrooms').value);
 
-            var precalc = (begmush+slcmush);
-            var calc = (precalc-usemush);
+            var ttl = (begmushrooms+slcmushrooms);
 
-            document.getElementById('mushtotal').innerHTML = calc;
+            document.getElementById('mushttl').innerHTML = ttl;
+
+            var grndmushttl = (ttl-usemushrooms);
+
+            document.getElementById('mushtotal').innerHTML = grndmushttl;
             //bells
             var begbells = parseInt(document.getElementById('begbells').value);
-            var slcbells= parseInt(document.getElementById('slcbells').value);
-            // var ttlbells = parseInt(document.getElementById('ttlbells').value);
+            var slcbells = parseInt(document.getElementById('slcbells').value);
             var usebells = parseInt(document.getElementById('usebells').value);
 
-            var precalc = (begbells+slcbells);
-            var calc = (precalc-usebells);
+            var ttl = (begbells+slcbells);
 
-            document.getElementById('bellstotal').innerHTML = calc;
+            document.getElementById('bellsttl').innerHTML = ttl;
+
+            var grndbellsttl = (ttl-usebells);
+
+            document.getElementById('bellstotal').innerHTML = grndbellsttl;
             //pickle
             var begpickle = parseInt(document.getElementById('begpickle').value);
             var slcpickle = parseInt(document.getElementById('slcpickle').value);
-            // var ttlpickle = parseInt(document.getElementById('ttlpickle').value);
             var usepickle = parseInt(document.getElementById('usepickle').value);
 
-            var precalc = (begpickle+slcpickle);
-            var calc = (precalc-usepickle);
+            var ttl = (begpickle+slcpickle);
 
-            document.getElementById('pickletotal').innerHTML = calc;
+            document.getElementById('picklettl').innerHTML = ttl;
+
+            var grndpicklettl = (ttl-usepickle);
+
+            document.getElementById('pickletotal').innerHTML = grndpicklettl;
             //lemons
             var beglemons = parseInt(document.getElementById('beglemons').value);
             var slclemons = parseInt(document.getElementById('slclemons').value);
-            // var ttllemons = parseInt(document.getElementById('ttllemons').value);
             var uselemons = parseInt(document.getElementById('uselemons').value);
 
-            var precalc = (beglemons+slclemons);
-            var calc = (precalc-uselemons);
+            var ttl = (beglemons+slclemons);
 
-            document.getElementById('lemonstotal').innerHTML = calc;
+            document.getElementById('lemonsttl').innerHTML = ttl;
+
+            var grndlemonsttl = (ttl-uselemons);
+
+            document.getElementById('lemonstotal').innerHTML = grndlemonsttl;
             //jack
             var begjack = parseInt(document.getElementById('begjack').value);
             var slcjack = parseInt(document.getElementById('slcjack').value);
-            // var ttljack = parseInt(document.getElementById('ttljack').value);
             var usejack = parseInt(document.getElementById('usejack').value);
 
-            var precalc = (begjack+slcjack);
-            var calc = (precalc-usejack);
+            var ttl = (begjack+slcjack);
 
-            document.getElementById('jacktotal').innerHTML = calc;
+            document.getElementById('jackttl').innerHTML = ttl;
+
+            var grndjackttl = (ttl-usejack);
+
+            document.getElementById('jacktotal').innerHTML = grndjackttl;
             //chedd
             var begchedd = parseInt(document.getElementById('begchedd').value);
             var slcchedd = parseInt(document.getElementById('slcchedd').value);
-            // var ttlchedd = parseInt(document.getElementById('ttlchedd').value);
             var usechedd = parseInt(document.getElementById('usechedd').value);
 
-            var precalc = (begchedd+slcchedd);
-            var calc = (precalc-usechedd);
+            var ttl = (begchedd+slcchedd);
 
-            document.getElementById('cheddtotal').innerHTML = calc;
+            document.getElementById('cheddttl').innerHTML = ttl;
+
+            var grndcheddttl = (ttl-usechedd);
+
+            document.getElementById('cheddtotal').innerHTML = grndcheddttl;
             //swiss
             var begswiss = parseInt(document.getElementById('begswiss').value);
             var slcswiss = parseInt(document.getElementById('slcswiss').value);
-            // var ttlswiss = parseInt(document.getElementById('ttlswiss').value);
             var useswiss = parseInt(document.getElementById('useswiss').value);
 
-            var precalc = (begswiss+slcswiss);
-            var calc = (precalc-useswiss);
+            var ttl = (begswiss+slcswiss);
 
-            document.getElementById('swisstotal').innerHTML = calc;
+            document.getElementById('swissttl').innerHTML = ttl;
+
+            var grndswissttl = (ttl-useswiss);
+
+            document.getElementById('swisstotal').innerHTML = grndswissttl;
             //pjack
             var begpjack = parseInt(document.getElementById('begpjack').value);
             var slcpjack = parseInt(document.getElementById('slcpjack').value);
-            // var ttlpjack = parseInt(document.getElementById('ttlpjack').value);
             var usepjack = parseInt(document.getElementById('usepjack').value);
 
-            var precalc = (begpjack+slcpjack);
-            var calc = (precalc-usepjack);
+            var ttl = (begpjack+slcpjack);
 
-            document.getElementById('pjacktotal').innerHTML = calc;
+            document.getElementById('pjackttl').innerHTML = ttl;
+
+            var grndpjackttl = (ttl-usepjack);
+
+            document.getElementById('pjacktotal').innerHTML = grndpjackttl;
             //turkey
             var begturkey = parseInt(document.getElementById('begturkey').value);
             var slcturkey = parseInt(document.getElementById('slcturkey').value);
-            // var ttlturkey = parseInt(document.getElementById('ttlturkey').value);
             var useturkey = parseInt(document.getElementById('useturkey').value);
 
-            var precalc = (begturkey+slcturkey);
-            var calc = (precalc-useturkey);
+            var ttl = (begturkey+slcturkey);
 
-            document.getElementById('turkeytotal').innerHTML = calc;
+            document.getElementById('turkeyttl').innerHTML = ttl;
+
+            var grndturkeyttl = (ttl-useturkey);
+
+            document.getElementById('turkeytotal').innerHTML = grndturkeyttl;
             //ham
             var begham = parseInt(document.getElementById('begham').value);
             var slcham = parseInt(document.getElementById('slcham').value);
-            // var ttlham = parseInt(document.getElementById('ttlham').value);
             var useham = parseInt(document.getElementById('useham').value);
 
-            var precalc = (begham+slcham);
-            var calc = (precalc-useham);
+            var ttl = (begham+slcham);
 
-            document.getElementById('hamtotal').innerHTML = calc;
+            document.getElementById('hamttl').innerHTML = ttl;
+
+            var grndhamttl = (ttl-useham);
+
+            document.getElementById('hamtotal').innerHTML = grndhamttl;
             //pastrami
             var begpastrami = parseInt(document.getElementById('begpastrami').value);
             var slcpastrami = parseInt(document.getElementById('slcpastrami').value);
@@ -1697,17 +1727,14 @@
         function grandTotal() {
             var begTotal = parseInt(document.getElementById('begttl').innerHTML);
             var slcTotal = parseInt(document.getElementById('slcttl').innerHTML);
-            var ttlTotal = parseInt(document.getElementById('ttlttl').innerHTML);
             var useTotal = parseInt(document.getElementById('usettl').innerHTML);
 
-            if(grandCalc != NaN) {
-                document.getElementById('grndttl').innerHTML = grandCalc;
-            }
-            else {
-                document.getElementById('grndttl').innerHTML = "&nbsp;";
-            }
+            var ttlTotal = parseInt(document.getElementById('ttlttl').innerHTML);
 
-            var preGrandCalc = (begTotal+slcTotal+ttlTotal);
+
+
+
+            var preGrandCalc = (begTotal+slcTotal);
             var grandCalc = (preGrandCalc - useTotal)
             document.getElementById('grndttl').innerHTML = grandCalc;
         }

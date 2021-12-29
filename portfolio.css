@@ -181,3 +181,7 @@ p#grndttl {
         width: 220px;
     }
 }
+
+p#rbttl, p#pastramittl, p#hamttl, p#turkeyttl, p#pjackttl, p#swissttl, p#cheddttl, p#jackttl, p#lemonsttl, p#picklettl, p#bellsttl, p#mushttl, p#tomsttl, p#onsttl {
+    text-align: center;
+}
